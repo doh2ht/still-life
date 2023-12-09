@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, orientation=landscape">
+    <title>apple</title>
+    <style>
+        body {
+            background-color: black;
+            margin:0;
+        }
+        @media(orientation: portrait){ 
+            video{
+                transform: rotate(90deg);
+                transform-origin: top right;
+                width:100vh;
+                height:100vw;
+                right:0;
+                top:100%;
+                position:absolute;
+            }
+            
+        }
+        .next{position:fixed;
+        z-index:2; right:2%; top:50%;
+    color:white;   border:none; background:none;font-family: 'neue', monospace;}
+    .pre{position:fixed;
+        z-index:2; left:2%; top:50%;
+    color:white;   border:none; background:none;font-family: 'neue', monospace;}  
+    </style>
+</head>
+<body>
+    <button class="pre" onclick="location.href='bread.html'">&#12296;</button>
+    <button class="next" onclick="location.href='banana.html'">&#12297;
+    </button>
+    <video width="100%" height="100%" autoplay muted loop>
+        <source src="mov/apple.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
